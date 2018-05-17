@@ -2,10 +2,16 @@
 
 class World
 {
+    public:
     World() { std::cout << "Hello! \n"; }
     ~World(){ std::cout << "Good bye \n"; }
 };
 
 World TheWorld;
 
-void main() {}
+int main(int argc, char const *argv[])
+{
+    /* code */
+    return 0;
+}
+
