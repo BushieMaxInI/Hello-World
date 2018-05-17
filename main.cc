@@ -3,15 +3,18 @@
 class World
 {
     public:
-    World(int i) 
+    World(int id) : _identifier(id)
     { 
-        std::cout << "Hello! from " << i << " \n"; 
+        std::cout << "Hello! from " << _identifier << " \n"; 
     }
 
     ~World()
     { 
-        std::cout << "Good bye  \n"; 
+        std::cout << "Good bye "<< _identifier << " \n"; 
     }
+
+    private:
+    const int _identifier;
 };
 
 World TheWorld(1);
